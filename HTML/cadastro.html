@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+<body>
+        <div id="login">
+            <div class="card">
+            <h1>Cadastrar</h1><br>
+            
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+            
+            <label id="labelNome" for="nome">Nome</label><br>
+            <input id="nome" type="text" required><br>
+            
+            <label id="labelUsuario" for="usuario">Usuario</label><br>
+            <input id="usuario" type="text" required><br>
+            
+            <label id="labelSenha" for="senha">Senha</label><br>
+            <input id="senha" type="password" required><br>
+            
+            <label id="labelConfirmSenha" for="">Confirme a Senha</label><br>
+            <input id="confirmSenha" type="password" required><br>
+            
+            <button id="botao" onclick="cadastrar()">Cadastrar</button><br>
+            
+            <a href="login.html">Entrar</a>
+            
+        </div>
+        </div>
+        
+        <script src="../SCRIPT/cadastro.js"></script>
+        
+</body>
+</html>

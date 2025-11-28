@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient( to right, rgb(19, 142, 151), rgb(116, 225, 233), rgb(19, 142, 151));
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.card {
+    background-color: rgb(205, 226, 226);
+    padding: 100px;
+    border-radius: 5%;
+    
+
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    margin-top: 5px;
+    font-size: large;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    font-size: 1.5em;
+    
+}
