@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../CSS/cadastro.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </head>
 <body>
         <div id="login">
@@ -23,12 +24,12 @@
             <label id="labelSenha" for="senha">Senha</label><br>
             <input id="senha" type="password" required><br>
             
-            <label id="labelConfirmSenha" for="">Confirme a Senha</label><br>
+            <label id="labelConfirmSenha" for="confirmSenha">Confirme a Senha</label><br>
             <input id="confirmSenha" type="password" required><br>
             
-            <button id="botao" onclick="cadastrar()">Cadastrar</button><br>
+            <button onclick="cadastrar()">Cadastrar</button><br>
             
-            <a href="login.html">Entrar</a>
+        
             
         </div>
         </div>

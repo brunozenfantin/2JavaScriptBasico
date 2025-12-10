@@ -73,20 +73,31 @@ confirmSenha.addEventListener('keyup', ()=> {
 
  function cadastrar() {
     if(validNome && validConfirmSenha && validSenha && validUsuario) {
-        let listaUsuario = JSON.parse(localStorage.get.getItem('listaUsuario') || '[]')
+        let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]')
     
-        let senhaCriptografada = CriptoJS.SHA512(senha.value).toString()
+        let senhaCriptografada = CryptoJS.SHA512(senha.value).toString()
 
         listaUsuario.push(
             {
                 nomeCadastrado: nome.value,
                 usuarioCadastrado: usuario.value,
-                senhaCadastrada: nome.value
+                senhaCadastrada: senhaCriptografada.value
                 
             }
         )
 
         localStorage.setItem('listaUsuario', JSON.stringify(listaUsuario))
+
+        msgSuccess.setAttribute('style', 'display:block')
+        msgSuccess.innerHTML = '<strong>Cadastro usuário...</strong>'
+        msgError.setAttribute('style', 'display: nome')
+        msgError.innerHTML = ''
+
+        setTimeout(()=>{
+            window.location.href = '../HTML/login.html'
+        }, 3000)
+
+        
 
     }
  }
